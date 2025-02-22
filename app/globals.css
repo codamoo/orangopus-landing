@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-transparent {
+  color: #ff913d !important;
+}
+
+.bg {
+  background: #ff913d;
+}
+
+.bg-card {
+  background: #1111115b;
+  border-radius: 25px;
+}
+
+.bg-space-800 {
+ background:#1a1f3c5b !important;
+}
+
+.rounded-card {
+  border-radius: 25px;
+}
+
+:root {
+  --background: 240 50% 5%;
+  --foreground: 0 0% 100%;
+  --card: 240 30% 10%;
+  --card-foreground: 0 0% 100%;
+  --popover: 240 30% 10%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 20.5 90.2% 48.2%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 30% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 240 30% 20%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 30% 20%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 30% 20%;
+  --input: 240 30% 20%;
+  --ring: 20.5 90.2% 48.2%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  * {
+    @apply border-border;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-orbitron);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.star {
+  animation: twinkle 2s infinite;
+}
+
+.bg-space-900 {
+  background-color: #090b1a;
+}
+
+.bg-space-800 {
+  background-color: #0f1329;
+}
+
+.bg-space-700 {
+  background-color: #1a1f3c;
+}
+
+.button-brand {
+  background-color: #ff913d;
+  color: var(--primary-foreground);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-brand:hover {
+  background-color: darken(#ff913d, 10%);
+}
+
