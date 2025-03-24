@@ -11,7 +11,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-20 flex justify-center z-50 relative">
         <Link className="flex items-center justify-center" href="#">
           <Image
-            src="https://orangopus.org/img/logo2.png"
+            src="logo.png"
             alt="Orangopus Logo"
             width={140}
             height={60}
@@ -85,7 +85,7 @@ export default function Home() {
                 Our Cosmic Journey
               </h2>
               <p className="text-xl text-gray-300">
-                Orangopus was born from a vision to create an open-source, non-profit platform where creativity knows
+                Orbexa was born from a vision to create an open-source, non-profit platform where creativity knows
                 no bounds. We're dedicated to fostering a universe of inclusivity and innovation, where creators from
                 all backgrounds can develop their ideas, guided by mentorship and empowered by open-source technology.
               </p>
@@ -127,7 +127,7 @@ export default function Home() {
       </main>
       <footer className="w-full py-6 px-4 border-t border-space-700">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">© 2024 Orangopus. All rights reserved across the galaxy.</p>
+          <p className="text-sm text-gray-400">© 2025 Orbexa. All rights reserved across the galaxy.</p>
           <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
             <Link className="text-sm hover:text-orange-400 transition-colors" href="#">
               Terms of Service
