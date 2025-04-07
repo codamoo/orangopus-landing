@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FeatureCard } from "@/components/feature-card"
 import { SpaceBackground } from "@/components/space-background"
+import { GitHubReposSection } from "@/components/github-repos-section"
 
 export default function Home() {
   return (
@@ -40,13 +41,13 @@ export default function Home() {
                   Start Your Journey
                 </Button>
               </Link>
-              <Link href="#about">
+              <Link href="#labs">
                 <Button
                   size="lg"
                   variant="outline"
                   className="text-white border-orange-400 hover:bg-orange-400/10 font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
                 >
-                  Explore Our Mission
+                  Explore Our Labs
                 </Button>
               </Link>
               </div>
@@ -90,6 +91,17 @@ export default function Home() {
                 all backgrounds can develop their ideas, guided by mentorship and empowered by open-source technology.
               </p>
             </div>
+          </div>
+        </section>
+        <section id="labs" className="w-full py-12 md:py-24 lg:py-32 px-4 relative overflow-hidden">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-600">
+              Cosmic Labs
+            </h2>
+            <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12">
+              Explore our experimental projects and open-source repositories. These cosmic experiments represent our latest innovations and contributions to the open-source universe.
+            </p>
+            <GitHubReposSection />
           </div>
         </section>
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32 px-4">
